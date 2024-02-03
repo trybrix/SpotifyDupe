@@ -1,4 +1,57 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 body{
-  font-family: 'Monsterrat', 'sans-serif';
+  background-color: #121212;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.sidebar { /*sidebar menu  */
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #000000;
+  padding: 25px;
   
 }
+/**/
+.sidebar .logo img{/*changes logo size */
+  width: 135px;
+}
+.sidebar .navigation ul{/*targets unordered list, space b/w logo and sidebar menus*/
+  list-style: none;
+  margin-top: 20px;
+}
+.sidebar .navigation ul li{/*targets list and add space top/btm & r/l*/
+  padding: 10px 7px;
+}
+.sidebar .navigation ul li a{/*targers all inside <a> and changes according to the code */
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Below changes color when user hover, click and focus */
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus{
+  color: #ffffff;
+}
+.sidebar .navigation ul li a:hover .fa,
+.sidebar .navigation ul li a:active .fa,
+.sidebar .navigation ul li a:focus .fa{
+  color: #ffffff;
+}
+.sidebar .navigation ul li a:hover .fa:hover,
+.sidebar .navigation ul li a:active .fa:active,
+.sidebar .navigation ul li a:focus .fa:focus{
+  color: #ffffff;
+}
+
+
