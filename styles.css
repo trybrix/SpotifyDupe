@@ -1,14 +1,14 @@
 *{
   padding: 0;
   margin: 0;
-}
-
+}/*Sets all padding(space inside the element and margin(space inside the element) to 0*/
+/*-------------------------------------------------------*/
 body{
   background-color: #121212;
   font-family: 'Montserrat', sans-serif;
 
 }
-
+/*-------------------------------------------------------*/
 .sidebar { /*sidebar menu  */
   position: fixed;
   left: 0;
@@ -19,39 +19,71 @@ body{
   padding: 25px;
   
 }
-/**/
-.sidebar .logo img{/*changes logo size */
+
+/*-------------------------------------------------------*/
+.sidebar .logo img{/*Changes logo size */
   width: 135px;
 }
-.sidebar .navigation ul{/*targets unordered list, space b/w logo and sidebar menus*/
+.sidebar .navigation ul{/*Targets unordered list, space b/w logo and sidebar menus*/
   list-style: none;
   margin-top: 20px;
 }
-.sidebar .navigation ul li{/*targets list and add space top/btm & r/l*/
+.sidebar .navigation ul li{/*Targets list and add space top/btm & rt/lt*/
   padding: 10px 7px;
 }
-.sidebar .navigation ul li a{/*targers all inside <a> and changes according to the code */
+.sidebar .navigation ul li a{/*Targers all inside <a> and changes according to the code */
   color: #b3b3b3;
-  text-decoration: none;
+  text-decoration: none; /*Removes underline*/
   font-weight: bold;
   font-size: 12px;
 }
 
-/* Below changes color when user hover, click and focus */
+/*Add font and space between text and icon*/
+.sidebar .navigation ul li .fa{
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Below changes color when user hover, click and indicates focus */
 .sidebar .navigation ul li a:hover,
 .sidebar .navigation ul li a:active,
 .sidebar .navigation ul li a:focus{
   color: #ffffff;
 }
+/* Refers to the class .fa(fontawesome)*/
 .sidebar .navigation ul li a:hover .fa,
 .sidebar .navigation ul li a:active .fa,
 .sidebar .navigation ul li a:focus .fa{
-  color: #ffffff;
+  color: #b3b3b3;
 }
+/* Then allows the user to interact with the icon by hovering, clicking, and focus
+   which changes the color to (color below)*/
 .sidebar .navigation ul li a:hover .fa:hover,
 .sidebar .navigation ul li a:active .fa:active,
 .sidebar .navigation ul li a:focus .fa:focus{
   color: #ffffff;
 }
+/*-------------------------------------------------------*/
 
+.sidebar .policies{
+  position: absolute;
+  bottom: 100px;
+}
+.sidebar .policies ul{
+  list-style: none;
+}
+.sidebar .policies ul li{
+  padding-bottom: 5px;
+}
+.sidebar .policies ul li a{
+  color: #b3b3b3;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 10px;
+}
 
+.sidebar .policies ul li a:hover,
+.sidebar .policies ul li a:active,
+.sidebar .policies ul li a:focus{
+  text-decoration: underline;
+}
