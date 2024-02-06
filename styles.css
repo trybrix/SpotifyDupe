@@ -14,7 +14,7 @@ body{
   left: 0;
   top: 0;
   bottom: 0;
-  width: 200px;
+  width: 200px;   /*Remember when setting measurement, it will become fixed*/
   background-color: #000000;
   padding: 25px;
   
@@ -86,4 +86,82 @@ body{
 .sidebar .policies ul li a:active,
 .sidebar .policies ul li a:focus{
   text-decoration: underline;
+}
+/*-------------------------------------------------------*/
+
+.main-container{
+  margin-left: 245px;
+  margin-bottom: 100px; 
+}
+
+.topbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: #101010;
+  padding: 15px 30px;
+}
+
+.topbar .prev-next-buttons button{
+  color: #7a7a7a;
+  cursor: not-allowed;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  font-size: 18px;
+  border: 0px;
+  background-color: #090909;
+  margin-right: 10px;
+}
+
+.topbar .navibar{
+  display: flex;
+  align-items: center;
+}
+
+.topbar .navibar ul{
+  list-style: none;
+}
+.topbar .navibar ul li{
+  display: inline-block;
+  margin: 0px 8px;
+  width: 70px; /*Fixed width*/
+}
+.topbar .navibar ul li a{
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.topbar .navibar ul li a:hover,
+.topbar .navibar ul li a:active,
+.topbar .navibar ul li a:focus {
+  color:#ffffff;
+  font-size: 15px;
+}
+
+.topbar.navibar ul li.divider{
+  color:#ffffff;
+  font-size: 26px;
+  margin: 0px 20px;
+  width: auto;
+}
+
+.topbar .navibar button{
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.topbar .navibar button:hover,
+.topbar .navibar button:active,
+.topbar .navibar button:focus{
+  background-color: #f2f2f2;
 }
