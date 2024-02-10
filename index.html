@@ -14,99 +14,434 @@
     <!-- Links to a Google font stylesheets to import font family - links to css later on-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Links to external CSS stylesheet-->
     <link rel="stylesheet" href="./styles.css">
 
-<div class="sidebar">   <!--div is just a container .sidebar -->
-  <div class="logo" >
-    <a href="#">        <!--a is an anchor element with attribute-->
-      <!--put logo here-->
-      <img src="./images/Spotify_Logo_Green.png" alt="logo"/> 
-    </a> 
-  </div>
-    <!------------------------------>
-  <div class="navigation">    <!-- .navigation-->
-    <ul>    <!--Unordered List-->  <!-- <li> </li> Must be used within a parent container which is <ul> (most popular) but can be --> 
-      <li>  <!--just a List-->     <!-- used by other containter elements like <ol>, <ul>, <dl>, <menu>, etc. -->
-        <a href="#">
-          <span class="fa fa-home"> </span> <!-- From fontawesome, in line 11-->
-          <span>Home</span>   <!-- Inline container, use for group and style later in css-->
-        </a> 
-      </li>
+<!------------------------------>
+  <body> 
 
-      <li>
-        <a href="#">
-          <span class="fa fa-search"> </span> <!-- Access to fortawesome then icon-->
-          <span>Search</span>
+    <div class="sidebar">   <!--div is just a container .sidebar -->
+      <div class="logo" >
+        <a href="#">        <!--a is an anchor element with attribute-->
+          <!--put logo here-->
+          <img src="./images/Spotify_Logo_Green.png" alt="logo"/> 
         </a> 
-      </li> 
+      </div>
 
-      <li>
-        <a href="#">
-          <span class="fa fas fa-book"> </span> 
-          <span>Your Library</span>
-        </a> 
-      </li>
-    </ul>
-    <!------------------------------>
-    <div class="navigation">
-      <ul>
-        <li>
-          <a href="#">
-            <span class="fa fas fa-plus-square"> </span> 
-            <span>Create Playlist</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="fa fas fa-heart"> </span> 
-            <span>Liked Songs</span>
-          </a>  
-        </li>
-      </ul>
+
+      <div class="navigation">    <!-- .navigation-->
+        <ul>    <!--Unordered List-->  <!-- <li> </li> Must be used within a parent container which is <ul> (most popular) but can be --> 
+          <li>  <!--just a List-->     <!-- used by other containter elements like <ol>, <ul>, <dl>, <menu>, etc. -->
+            <a href="#">
+              <span class="fa fa-home"> </span> <!-- From fontawesome, in line 11-->
+              <span>Home</span>   <!-- Inline container, use for group and style later in css-->
+            </a> 
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="fa fa-search"> </span> <!-- Access to fortawesome then icon-->
+              <span>Search</span>
+            </a> 
+          </li> 
+
+          <li>
+            <a href="#">
+              <span class="fa fas fa-book"> </span> 
+              <span>Your Library</span>
+            </a> 
+          </li>
+        </ul>
+        <!------------------------------>
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="fa fas fa-plus-square"> </span> 
+                <span>Create Playlist</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="fa fas fa-heart"> </span> 
+                <span>Liked Songs</span>
+              </a>  
+            </li>
+          </ul>
+        </div>
+        <!------------------------------>
+        <!-- Fixed - both was outside of container-->
+        <div class="policies"> <!-- .policies-->
+          <ul>
+            <li>
+              <a href="#">Cookies</a>
+            </li>
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
+        </div>
+      </div> 
     </div>
-    <!------------------------------>
-    <!-- Fixed - both was outside of container-->
-    <div class="policies"> <!-- .policies-->
-      <ul>
-        <li>
-          <a href="#">Cookies</a>
-        </li>
-        <li>
-          <a href="#">Privacy</a>
-        </li>
-      </ul>
+    <!---------------------------------->
+
+    <div class="main-container"> <!-- Main viewpage container -->
+      <div class="topbar">
+        <div class="prev-next-buttons">
+          <button type="button" class="fa fas fa-chevron-left"></button>
+          <button type="button" class="fa fas fa-chevron-right"></button>
+        </div>
+
+        <div class="navibar">
+          <ul>
+            <li>
+              <a href="#">Premium</a>
+            </li>
+            <li>
+              <a href="#">Support</a>
+            </li>
+            <li>
+              <a href="#">Download</a>
+            </li>
+            <li class="divider"> | </li>
+            <li>
+              <a href="#">Sign Up</a>
+            </li>
+          </ul>
+          <button type="button"> Log In </button>
+        </div>
+      </div>
+      
+      <!-- --------------------------------------------------------------- -->
+      <!-- spotify playlits -->
+      <div class="spotify-playlists">
+        <h2>Spotify Playlists</h2>
+  
+        <div class="list">
+          <div class="item">
+            <img src="./images/hothits.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Today's Top Hits</h4>
+            <p>Ft. J.Cole, Lil Wayne, and XXXTentacion</p>
+          </div>
+          
+          <div class="item">
+            <img src="./images/dailydrive.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Daily Drive</h4>
+            <p>We go zoom zoom</p>
+          </div>
+          
+          <div class="item">
+            <img src="./images/dailymix_1.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Daily Mix 1</h4>
+            <p>Mixy</p>
+          </div>
+          
+          <div class="item">
+            <img src="./images/dailymix_2.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Daily Mix 2</h4>
+            <p>Mixy mixy</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/dailymix_3.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Daily Mix 3</h4>
+            <p>Mixy mixy mixy</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/ye_1.webp" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Ye</h4>
+            <p>Ye</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/rapcaviar.png" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>RapCaviar</h4>
+            <p>Best one</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/spanishindiemix.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Dimelo Mamas</h4>
+            <p>Till >12am</p>
+          </div>
+
+        </div>
+      </div>
+      <!-- -------------------------------------------------------- -->
+      <div class="spotify-playlists">
+        <h2>Based on your Liked Songs</h2>
+  
+        <div class="list">
+          <div class="item">
+            <img src="./images/foofighters.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Foo Fighters</h4>
+            <p>Who doesn't know Foo Fighters?</p>
+          </div>
+          
+          <div class="item">
+            <img src="./images/indierockmix.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>We going Indie-Rock</h4>
+            <p>Love this</p>
+          </div>
+          
+          <div class="item">
+            <img src="./images/onrepeat.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>On Re-Repeat</h4>
+            <p>I know you have good taste</p>
+          </div>
+          
+          <div class="item">
+            <img src="./images/onrewind.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Bring it backk</h4>
+            <p>Who are we listening to?</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/thesmiths_mim.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>The Smiths</h4>
+            <p>Just awesome</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/timecapsule.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Woah you listened to this</h4>
+            <p>Our alter ego from the past</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/topsongs2023.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Top Songs 2023</h4>
+            <p>W Line up</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/tvgirl_cover.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>TV Girl</h4>
+            <p>Lovers rocking this songs rn</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="spotify-playlists">
+        <h2>Explore your genres</h2>
+  
+        <div class="list">
+          <div class="item">
+            <img src="./images/killers_hotfuss.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Killers ?</h4>
+            <p>Top songs of The Killers</p>
+          </div>
+          
+          <div class="item">
+            <img src="./images/upbeatpopmix.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Upbeat.Pop.Why not</h4>
+            <p>Cats and Boots and Cats and Boots</p>
+          </div>
+          
+          <div class="item">
+            <img src="./images/velvetunderground.png" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>velvetunderground</h4>
+            <p>I want some red velvet now.</p>
+          </div>
+          
+          <div class="item">
+            <img src="./images/gymhardstyle.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>We Go Gym</h4>
+            <p>Let the power of your commitment push your limits</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/workoutmusic.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>We push our limit</h4>
+            <p>Who's gonna carry the boats</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/rapcaviar.png" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Ran out of images</h4>
+            <p>But you get the idea</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/spanishindiemix.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Will Make More</h4>
+            <p>Till >12am</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/Israel_K_Rainbow.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Follow me!</h4>
+            <p>And my journey. One Goal.</p>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------------------------------- -->
+      <div class="spotify-playlists">
+        <h2>One Day or Day One</h2>
+  
+        <div class="list">
+          <div class="item">
+            <img src="./images/hothits.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>One</h4>
+            <p>Life</p>
+          </div>
+          
+          <div class="item">
+            <img src="./images/dailydrive.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Goal</h4>
+            <p>Commitment</p>
+          </div>
+          
+          <div class="item">
+            <img src="./images/dailymix_1.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>One</h4>
+            <p>Discipline</p>
+          </div>
+          
+          <div class="item">
+            <img src="./images/dailymix_2.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Dream</h4>
+            <p>Knowledge</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/gymhardstyle.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>And</h4>
+            <p>Patience</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/rapcaviar.png" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>I'll</h4>
+            <p>Determination</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/spanishindiemix.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Get</h4>
+            <p>Hunger</p>
+          </div>
+
+          <div class="item">
+            <img src="./images/Israel_K_Rainbow.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>It</h4>
+            <p>Family</p>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- bottom header for preview -->
+      <div class="preview">
+        <div class="text">
+          <h6> Preview of Spotify</h6>
+          <p>With Premium Student, eligible students get Premium at a discount for up to 4 years. </p>
+        </div>
+        <div class="button">
+          <button type="button"> Sign up free</button>
+        </div> 
+      </div>
     </div>
-  </div> 
-</div>
+    
 <!---------------------------------->
-<div class="main-content"> <!-- Main viewpage container -->
-  <div class="topbar">
-    <div class="prev-next-buttons">
-      <button type="button" class="fa fas fa-chevron-left"></button>
-      <button type="button" class="fa fas fa-chevron-right"></button>
-    </div>
-
-    <div class="navibar">
-      <ul>
-        <li>
-          <a href="#">Premium</a>
-        </li>
-        <li>
-          <a href="#">Support</a>
-        </li>
-        <li>
-          <a href="#">Download</a>
-        </li>
-        <li class="divider"> | </li>
-        <li>
-          <a href="#">Sign Up</a>
-        </li>
-      <button type="button"> Log In </button>
-    </div>
-  </div>  
-</div>
-<!---------------------------------->
+  </body>
 </html>
